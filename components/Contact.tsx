@@ -39,8 +39,11 @@ export default function Contact() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-5 w-5 shrink-0 text-blue-accent" />
-              <a href="tel:+92" className="transition hover:text-blue-accent">
-                +92 XXX XXXXXXX
+              <a
+                href="tel:+923476472827"
+                className="transition hover:text-blue-accent"
+              >
+                +92 347 647 2827
               </a>
             </li>
             <li className="flex gap-3">

@@ -91,8 +91,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+92" className="hover:text-blue-accent">
-                  +92 XXX XXXXXXX
+                <a href="tel:+923476472827" className="hover:text-blue-accent">
+                  +92 347 647 2827
                 </a>
               </li>
               <li>
@@ -116,7 +116,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/kmmsportswear"
               target="_blank"
               rel="noreferrer"
               className="text-white/70 transition hover:text-blue-accent"
@@ -134,7 +134,7 @@ export default function Footer() {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/923476472827"
               target="_blank"
               rel="noreferrer"
               className="text-white/70 transition hover:text-blue-accent"
