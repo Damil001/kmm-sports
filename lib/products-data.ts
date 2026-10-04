@@ -5,6 +5,7 @@ export const PRODUCT_SLUGS = [
   "hoodies",
   "cargo-trousers",
   "varsity-jackets",
+  "shirts",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -253,6 +254,67 @@ export const products: Product[] = [
       {
         src: "/images/products/varsity-jackets/05.jpg",
         alt: "Maroon and black KMM varsity jacket",
+      },
+    ],
+  },
+  {
+    slug: "shirts",
+    title: "Shirts",
+    shortDesc: "Graphic tees and all-over print shirts for teams and lifestyle.",
+    metaDescription:
+      "Custom KMM Sports shirts — graphic tees and sublimation-printed t-shirts manufactured in Sialkot, Pakistan for brands and clubs.",
+    intro:
+      "Crew-neck tees built for retail and team drops — solid bases, bold placement graphics, and all-over sublimation prints with color locked for bulk.",
+    paragraphs: [
+      "We produce short-sleeve shirts with clean crew necks and print pipelines that keep artwork sharp across seams, sleeves, and reorders.",
+      "Whether you need motivational graphics, tropical AOPs, or sport-tech slash designs, we match fabric handfeel and sizing to your program.",
+    ],
+    highlights: [
+      "Crew-neck short-sleeve tees",
+      "Placement print and all-over sublimation",
+      "Cotton, blends, and performance options",
+      "Private-label and team bulk runs",
+    ],
+    gallery: [
+      {
+        src: "/images/products/shirts/01.jpg",
+        alt: "Black and white brushstroke graphic t-shirt",
+      },
+      {
+        src: "/images/products/shirts/02.jpg",
+        alt: "Tropical leaf all-over print t-shirt",
+      },
+      {
+        src: "/images/products/shirts/03.jpg",
+        alt: "Black t-shirt with blue lightning graphic",
+      },
+      {
+        src: "/images/products/shirts/04.jpg",
+        alt: "Black and gold marble chevron t-shirt",
+      },
+      {
+        src: "/images/products/shirts/05.jpg",
+        alt: "White Rise Above mountain graphic t-shirt",
+      },
+      {
+        src: "/images/products/shirts/06.jpg",
+        alt: "Black and red slash graphic t-shirt",
+      },
+      {
+        src: "/images/products/shirts/07.jpg",
+        alt: "Black Limitless cracked marble t-shirt",
+      },
+      {
+        src: "/images/products/shirts/08.jpg",
+        alt: "Focus stay positive graphic t-shirt",
+      },
+      {
+        src: "/images/products/shirts/09.jpg",
+        alt: "Navy slash halftone graphic t-shirt",
+      },
+      {
+        src: "/images/products/shirts/10.jpg",
+        alt: "Believe In Yourself smoke graphic t-shirt",
       },
     ],
   },

@@ -58,10 +58,10 @@ export default function Contact() {
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-5 w-5 shrink-0 text-blue-accent" />
               <a
-                href="mailto:info@kmmsports.com"
+                href="mailto:Kmmsportswear@gmail.com"
                 className="transition hover:text-blue-accent"
               >
-                info@kmmsports.com
+                Kmmsportswear@gmail.com
               </a>
             </li>
             <li className="flex gap-3">

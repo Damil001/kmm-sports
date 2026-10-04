@@ -10,6 +10,7 @@ import {
   Layers,
   Package,
   Award,
+  Tags,
   type LucideIcon,
 } from "lucide-react";
 import { products } from "@/lib/products-data";
@@ -23,6 +24,7 @@ const iconBySlug: Record<ProductSlug, LucideIcon> = {
   hoodies: Layers,
   "cargo-trousers": Package,
   "varsity-jackets": Award,
+  shirts: Tags,
 };
 
 export default function Products() {

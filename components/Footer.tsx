@@ -8,6 +8,7 @@ const productLinks = [
   { href: "/products/hoodies", label: "Hoodies" },
   { href: "/products/cargo-trousers", label: "Cargo Trousers" },
   { href: "/products/varsity-jackets", label: "Varsity Jackets" },
+  { href: "/products/shirts", label: "Shirts" },
 ];
 
 const companyLinks = [
@@ -87,10 +88,10 @@ export default function Footer() {
               <li>Sialkot, Punjab, Pakistan</li>
               <li>
                 <a
-                  href="mailto:info@kmmsports.com"
+                  href="mailto:Kmmsportswear@gmail.com"
                   className="hover:text-blue-accent"
                 >
-                  info@kmmsports.com
+                  Kmmsportswear@gmail.com
                 </a>
               </li>
               <li>
