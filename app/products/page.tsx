@@ -6,7 +6,7 @@ import { products } from "@/lib/products-data";
 export const metadata: Metadata = {
   title: "Product Range | KMM Sports",
   description:
-    "Explore KMM Sports product ranges — football kits, cricket wear, training apparel, sublimation, goalkeeper kits, and OEM manufacturing from Sialkot, Pakistan.",
+    "Explore KMM Sports product ranges — basketball, football, and volleyball uniforms manufactured in Sialkot, Pakistan.",
 };
 
 export default function ProductsIndexPage() {
@@ -35,17 +35,13 @@ export default function ProductsIndexPage() {
                 className="group flex flex-col overflow-hidden border border-navy-deep/10 bg-white text-left transition duration-300 hover:-translate-y-1.5 hover:border-blue-primary"
                 style={{ borderRadius: "4px" }}
               >
-                <div className="relative aspect-[4/3] bg-navy-deep">
+                <div className="relative aspect-[4/3] bg-white">
                   <Image
                     src={thumb.src}
                     alt={thumb.alt}
                     fill
-                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                    className="object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div
-                    className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent"
-                    aria-hidden
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">

@@ -2,10 +2,9 @@ import Link from "next/link";
 import { Instagram, Linkedin, MessageCircle } from "lucide-react";
 
 const productLinks = [
-  { href: "/products/football-kits", label: "Football Kits" },
-  { href: "/products/cricket-kits", label: "Cricket Wear" },
-  { href: "/products/training-wear", label: "Training Wear" },
-  { href: "/products/oem-private-label", label: "OEM / Private Label" },
+  { href: "/products/basketball-uniforms", label: "Basketball Uniforms" },
+  { href: "/products/football-uniforms", label: "Football Uniforms" },
+  { href: "/products/volleyball-uniforms", label: "Volleyball Uniforms" },
 ];
 
 const companyLinks = [

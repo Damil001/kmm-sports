@@ -59,17 +59,21 @@ export default function ProductRangePage({ params }: Props) {
         </div>
       </div>
 
-      <section className="relative min-h-[420px] md:min-h-[480px]">
-        <Image
-          src={hero.src}
-          alt={hero.alt}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      <section className="relative min-h-[420px] overflow-hidden bg-navy-deep md:min-h-[480px]">
+        <div className="absolute inset-0 flex items-center justify-end">
+          <div className="relative h-full w-full max-w-xl md:max-w-2xl lg:max-w-3xl">
+            <Image
+              src={hero.src}
+              alt={hero.alt}
+              fill
+              priority
+              className="object-contain object-right p-6 opacity-90 md:p-10"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+        </div>
         <div
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/75 to-navy-deep/40"
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy-deep/40"
           aria-hidden
         />
         <div className="relative z-10 mx-auto flex min-h-[420px] max-w-content flex-col justify-end px-4 py-16 md:min-h-[480px] md:px-8 md:py-20 lg:px-10">

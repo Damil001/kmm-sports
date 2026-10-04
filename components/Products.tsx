@@ -3,26 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  Shirt,
-  CircleDot,
-  Dumbbell,
-  Layers,
-  Shield,
-  Factory,
-  type LucideIcon,
-} from "lucide-react";
+import { Dribbble, Shirt, CircleDot, type LucideIcon } from "lucide-react";
 import { products } from "@/lib/products-data";
 import type { ProductSlug } from "@/lib/products-data";
 import { fadeUp, staggerContainer, fadeUpChild } from "@/lib/motion";
 
 const iconBySlug: Record<ProductSlug, LucideIcon> = {
-  "football-kits": Shirt,
-  "cricket-kits": CircleDot,
-  "training-wear": Dumbbell,
-  "sublimation-apparel": Layers,
-  "goalkeeper-kits": Shield,
-  "oem-private-label": Factory,
+  "basketball-uniforms": Dribbble,
+  "football-uniforms": Shirt,
+  "volleyball-uniforms": CircleDot,
 };
 
 export default function Products() {
@@ -64,16 +53,16 @@ export default function Products() {
                 className="group flex flex-col overflow-hidden border border-transparent bg-navy-deep text-left transition duration-300 hover:-translate-y-1.5 hover:border-blue-primary"
                 style={{ borderRadius: "4px" }}
               >
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[4/3] bg-white">
                   <Image
                     src={thumb.src}
                     alt={thumb.alt}
                     fill
-                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                    className="object-contain p-4 transition duration-500 group-hover:scale-[1.03]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div
-                    className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/20 to-transparent"
+                    className="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent"
                     aria-hidden
                   />
                   <div className="absolute right-4 top-4 flex h-12 w-12 items-center justify-center bg-navy-deep/80 backdrop-blur-sm" style={{ borderRadius: "4px" }}>

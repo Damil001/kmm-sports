@@ -22,14 +22,14 @@ export default function ProductRangeGallery({
         <motion.figure
           key={item.src}
           variants={fadeUpChild}
-          className="group relative aspect-[4/3] overflow-hidden bg-navy-deep"
+          className="group relative aspect-[4/3] overflow-hidden bg-white"
           style={{ borderRadius: "4px" }}
         >
           <Image
             src={item.src}
             alt={item.alt}
             fill
-            className="object-cover transition duration-500 group-hover:scale-[1.04]"
+            className="object-contain p-3 transition duration-500 group-hover:scale-[1.03]"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.figure>
