@@ -1,15 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, Globe } from "lucide-react";
 import { fadeUp } from "@/lib/motion";
+
+const WHATSAPP_NUMBER = "923476472827";
 
 export default function Contact() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
   const [message, setMessage] = useState("");
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    const name = fullName.trim();
+    const mail = email.trim();
+    const place = country.trim();
+    const inquiry = message.trim();
+
+    if (!name || !mail || !inquiry) return;
+
+    const text = [
+      "New inquiry from KMM Sports website",
+      "",
+      `Name: ${name}`,
+      `Email: ${mail}`,
+      `Country: ${place || "—"}`,
+      "",
+      "Message:",
+      inquiry,
+    ].join("\n");
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
 
   return (
     <section id="contact" className="bg-navy-deep py-16 md:py-24">
@@ -67,7 +94,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="flex flex-col gap-5">
+          <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
             <label className="flex flex-col gap-2">
               <span className="font-condensed text-xs font-semibold uppercase tracking-wider text-white/80">
                 Full Name
@@ -77,6 +104,7 @@ export default function Contact() {
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 autoComplete="name"
+                required
                 className="min-h-[48px] border border-white/10 bg-navy-card px-4 font-body text-white outline-none transition focus:border-blue-primary"
                 style={{ borderRadius: "4px" }}
               />
@@ -90,6 +118,7 @@ export default function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 autoComplete="email"
+                required
                 className="min-h-[48px] border border-white/10 bg-navy-card px-4 font-body text-white outline-none transition focus:border-blue-primary"
                 style={{ borderRadius: "4px" }}
               />
@@ -115,18 +144,23 @@ export default function Contact() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows={5}
+                required
                 className="resize-y border border-white/10 bg-navy-card px-4 py-3 font-body text-white outline-none transition focus:border-blue-primary"
                 style={{ borderRadius: "4px" }}
               />
             </label>
             <button
-              type="button"
+              type="submit"
               className="mt-2 min-h-[52px] w-full bg-blue-primary font-condensed text-sm font-bold uppercase tracking-wide text-white transition hover:bg-blue-accent"
               style={{ borderRadius: "4px" }}
             >
-              Send Inquiry
+              Send via WhatsApp
             </button>
-          </div>
+            <p className="text-center font-body text-xs text-white/50">
+              Opens WhatsApp with your inquiry ready to send — free, no account
+              required on our side.
+            </p>
+          </form>
         </motion.div>
       </div>
     </section>
