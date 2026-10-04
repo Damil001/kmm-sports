@@ -5,6 +5,9 @@ const productLinks = [
   { href: "/products/basketball-uniforms", label: "Basketball Uniforms" },
   { href: "/products/football-uniforms", label: "Football Uniforms" },
   { href: "/products/volleyball-uniforms", label: "Volleyball Uniforms" },
+  { href: "/products/hoodies", label: "Hoodies" },
+  { href: "/products/cargo-trousers", label: "Cargo Trousers" },
+  { href: "/products/varsity-jackets", label: "Varsity Jackets" },
 ];
 
 const companyLinks = [

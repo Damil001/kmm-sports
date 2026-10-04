@@ -3,7 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Dribbble, Shirt, CircleDot, type LucideIcon } from "lucide-react";
+import {
+  Dribbble,
+  Shirt,
+  CircleDot,
+  Layers,
+  Package,
+  Award,
+  type LucideIcon,
+} from "lucide-react";
 import { products } from "@/lib/products-data";
 import type { ProductSlug } from "@/lib/products-data";
 import { fadeUp, staggerContainer, fadeUpChild } from "@/lib/motion";
@@ -12,6 +20,9 @@ const iconBySlug: Record<ProductSlug, LucideIcon> = {
   "basketball-uniforms": Dribbble,
   "football-uniforms": Shirt,
   "volleyball-uniforms": CircleDot,
+  hoodies: Layers,
+  "cargo-trousers": Package,
+  "varsity-jackets": Award,
 };
 
 export default function Products() {

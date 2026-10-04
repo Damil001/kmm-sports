@@ -2,6 +2,9 @@ export const PRODUCT_SLUGS = [
   "basketball-uniforms",
   "football-uniforms",
   "volleyball-uniforms",
+  "hoodies",
+  "cargo-trousers",
+  "varsity-jackets",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -127,6 +130,129 @@ export const products: Product[] = [
       {
         src: "/images/products/volleyball-uniforms/05.jpg",
         alt: "Red and black KMM volleyball uniform number 3",
+      },
+    ],
+  },
+  {
+    slug: "hoodies",
+    title: "Hoodies",
+    shortDesc: "Custom team and lifestyle hoodies — fleece and French terry.",
+    metaDescription:
+      "Custom KMM Sports hoodies — branded pullover hoodies for teams, clubs, and private-label programs, manufactured in Sialkot, Pakistan.",
+    intro:
+      "Warm-up and lifestyle hoodies built for teams and brands — stable fleece hands, clean logo placement, and colorways locked for bulk reorders.",
+    paragraphs: [
+      "We produce pullover hoodies with kangaroo pockets, ribbed cuffs and hems, and embroidery or print decoration to match your brand book.",
+      "From solid team colors to two-tone varsity looks, we align size curves and finishing so travel kits and retail drops feel like one collection.",
+    ],
+    highlights: [
+      "Pullover hoodies with kangaroo pocket",
+      "Fleece and French terry options",
+      "Embroidery, print, or patch branding",
+      "Team and private-label bulk programs",
+    ],
+    gallery: [
+      {
+        src: "/images/products/hoodies/01.jpg",
+        alt: "Black KMM varsity pullover hoodie",
+      },
+      {
+        src: "/images/products/hoodies/02.jpg",
+        alt: "Charcoal and cream two-tone KMM hoodie",
+      },
+      {
+        src: "/images/products/hoodies/03.jpg",
+        alt: "Navy KMM EST. 2024 pullover hoodie",
+      },
+      {
+        src: "/images/products/hoodies/04.jpg",
+        alt: "Olive green KMM hoodie with sleeve branding",
+      },
+      {
+        src: "/images/products/hoodies/05.jpg",
+        alt: "Heather grey KMM pullover hoodie",
+      },
+    ],
+  },
+  {
+    slug: "cargo-trousers",
+    title: "Cargo Trousers",
+    shortDesc: "Durable cargo pants for teams, sideline, and lifestyle.",
+    metaDescription:
+      "Custom KMM Sports cargo trousers — durable utility pants with branded detailing, manufactured in Sialkot, Pakistan.",
+    intro:
+      "Heavy-duty cargo trousers built for movement and wear — reinforced construction, utility pockets, and clean KMM branding for team and retail programs.",
+    paragraphs: [
+      "We produce straight-leg cargo pants with flap pockets, belt loops, and reinforced knee areas suited to coaching, sideline, and casual athletic use.",
+      "Colorways and logo placements can be locked to your brand book for consistent bulk reorders across black, navy, olive, khaki, and custom dyes.",
+    ],
+    highlights: [
+      "Multi-pocket cargo construction",
+      "Reinforced knees and durable twill",
+      "Print or patch branding options",
+      "Team and private-label bulk runs",
+    ],
+    gallery: [
+      {
+        src: "/images/products/cargo-trousers/01.jpg",
+        alt: "Black KMM cargo trousers",
+      },
+      {
+        src: "/images/products/cargo-trousers/02.jpg",
+        alt: "Navy KMM cargo trousers",
+      },
+      {
+        src: "/images/products/cargo-trousers/03.jpg",
+        alt: "Matte black KMM cargo trousers with reinforced knees",
+      },
+      {
+        src: "/images/products/cargo-trousers/04.jpg",
+        alt: "Olive green KMM cargo trousers",
+      },
+      {
+        src: "/images/products/cargo-trousers/05.jpg",
+        alt: "Khaki KMM cargo trousers",
+      },
+    ],
+  },
+  {
+    slug: "varsity-jackets",
+    title: "Varsity Jackets",
+    shortDesc: "Classic letterman jackets with custom patches and trims.",
+    metaDescription:
+      "Custom KMM Sports varsity jackets — letterman-style jackets with patches, rib trim, and private-label options, manufactured in Sialkot, Pakistan.",
+    intro:
+      "Letterman-style varsity jackets for teams and brands — wool or knit bodies, contrast sleeves, chenille or embroidered patches, and ribbed stripe trims.",
+    paragraphs: [
+      "We build snap-front varsity jackets with welt pockets, custom chest and sleeve lettering, and color-blocked sleeves to match your program identity.",
+      "From school teams to lifestyle drops, we align patch placement, rib colors, and sizing so bulk runs stay consistent reorder after reorder.",
+    ],
+    highlights: [
+      "Wool/knit body with contrast sleeves",
+      "Chenille, embroidery, or print patches",
+      "Striped rib collar, cuffs, and hem",
+      "Team and private-label bulk programs",
+    ],
+    gallery: [
+      {
+        src: "/images/products/varsity-jackets/01.jpg",
+        alt: "Black KMM varsity jacket with Better Days Ahead script",
+      },
+      {
+        src: "/images/products/varsity-jackets/02.jpg",
+        alt: "Black KMM varsity jacket with Dream Work Achieve text",
+      },
+      {
+        src: "/images/products/varsity-jackets/03.jpg",
+        alt: "Black and cream KMM varsity jacket Keep Moving Forward",
+      },
+      {
+        src: "/images/products/varsity-jackets/04.jpg",
+        alt: "Navy and cream KMM EST. 2024 varsity jacket",
+      },
+      {
+        src: "/images/products/varsity-jackets/05.jpg",
+        alt: "Maroon and black KMM varsity jacket",
       },
     ],
   },

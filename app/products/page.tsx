@@ -6,7 +6,7 @@ import { products } from "@/lib/products-data";
 export const metadata: Metadata = {
   title: "Product Range | KMM Sports",
   description:
-    "Explore KMM Sports product ranges — basketball, football, and volleyball uniforms manufactured in Sialkot, Pakistan.",
+    "Explore KMM Sports product ranges — basketball, football, and volleyball uniforms, hoodies, cargo trousers, and varsity jackets, manufactured in Sialkot, Pakistan.",
 };
 
 export default function ProductsIndexPage() {
